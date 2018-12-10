@@ -1,3 +1,15 @@
-page-home {
-
+table.chessboard {
+    margin: 0px auto;
+    background: #696969;
+    border: 25px solid #333;
+    border-collapse: collapse; /* */
+    border: 2px solid #000;
+}
+td.chessboard {
+    width: 60px; height: 60px;
+    border: 2px solid #333; /* */
+}
+tr.chessboard:nth-child(odd) td.chessboard:nth-child(even),
+tr.chessboard:nth-child(even) td.chessboard:nth-child(odd) {
+    background: white;
 }
