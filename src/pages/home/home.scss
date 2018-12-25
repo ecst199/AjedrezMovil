@@ -12,15 +12,16 @@ td.chessboard {
 }
 tr.chessboard:nth-child(odd) td.chessboard:nth-child(even),
 tr.chessboard:nth-child(even) td.chessboard:nth-child(odd) {
-  background: white;
+  background: rgb(255, 241, 241);
 }
 
 .white {
   color: white;
-  text-shadow: 0px 0px 2px black;
+  text-shadow: 0px 0px 1px black;
+  font-size: 2.5em;
 }
 
 .black {
   color: black;
-  text-shadow: 0px 0px 2px black;
+  font-size: 2.5em;
 }
