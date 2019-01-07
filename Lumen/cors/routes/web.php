@@ -11,6 +11,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->group(['middleware' => []], function () use ($router) 
+{
+    $router->post('/MoverFicha', ['uses' => 'AjedrezController@MoverFicha']);
+    $router->post('/BtnLogin', ['uses' => 'AjedrezController@BtnLogin']);
+    $router->get('/MostrarRepeticion', ['uses' => 'AjedrezController@MostrarRepeticion']);
+    $router->post('/GuardarProgreso', ['uses' => 'AjedrezController@GuardarProgreso']);
 });

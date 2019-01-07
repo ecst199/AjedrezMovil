@@ -58,6 +58,11 @@ $app->singleton(
 | route or middleware that'll be assigned to some specific routes.
 |
 */
+//composer require vluzrmos/lumen-cors
+
+$app->middleware([
+    'Vluzrmos\LumenCors\CorsMiddleware'
+]);
 
 // $app->middleware([
 //     App\Http\Middleware\ExampleMiddleware::class
